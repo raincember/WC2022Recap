@@ -1,0 +1,337 @@
+
+/*Font */
+
+@font-face {
+  font-family: "Frutiger";
+  src: url('assets/font/Frutiger\ 75\ Black\ Regular.otf');
+  }
+
+ @font-face {
+    font-family: "Qatar-bold";
+    src: url('assets/font/qatar2022arabic-bold.ttf');
+    }
+
+    @font-face {
+      font-family: "Qatar-heavy";
+      src: url('assets/font/qatar2022arabic-heavy.ttf');
+      }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+   
+  body {
+    font-family: "Frutiger";
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6f1;
+  }
+   
+  header {
+    display: inline;
+  }
+   
+  nav {
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    background-color: #4e0505;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+   
+  nav li {
+    list-style-type: none;
+  }
+   
+  nav a {
+    font-family: "Qatar-heavy";
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+  }
+
+.drop {
+    display: block;
+    cursor: pointer;
+  }
+
+.drop .buttondr {
+  display: flex;
+  outline: none;
+  border: #ffffff;
+  color: white;
+  padding: auto;
+  background-color: #4e0505;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #4e0505;
+}
+
+.drop-content li {
+  float: none;
+  padding: 10px;
+  display: block;
+  text-align: left;
+}
+
+.adrop{
+  font-size: 15px;
+}
+
+.drop-content li:hover {
+  background-color: #6c6c6c;
+}
+
+.drop:hover .drop-content {
+  display: block;
+}
+
+  #dra {
+    font-family: "Qatar-heavy";
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+  }
+   
+  main {
+    padding: 20px;
+    gap: 1.5rem;
+  }
+
+   
+  #content {
+    float: none;
+    justify-content: center;
+  }
+   
+  aside {
+	display: flex;
+	justify-content: center;
+  }
+   
+  h2 {
+    color: #C50000;
+  }
+   
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    background-color: #4e0505;
+  }
+   
+  .jumbotron {
+    font-size: 35px;
+    padding: 60px;
+    background-color: #f9f6f1;
+    text-align: center;
+    color: #4e0505;
+  }
+   
+  .profile header {
+    text-align: center;
+  }
+   
+  .featured-image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .featured-image2 {
+    width: 100%;
+    max-height: 60px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+   
+  .featured-image3 {
+    max-height: 400px;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+  }
+  .card {
+    border-radius: 5px;
+    padding: 5px;
+    
+  }
+
+  .card2 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-color: #C50000;
+  }
+  
+  .card3 {
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    background-color: #C50000;
+    border-color: #4e0505;
+  }
+  
+  .card3 img {
+    height: 200px;
+    border-radius: 100%;
+    border: 10px solid #fff;
+    background-color: #fff;
+  }
+
+  .cardprofile {
+    font-family: "Frutiger";
+    padding: 50px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardprofile img {
+    
+    width: 200px;
+  }
+
+  .cardprofile h2{
+    color: #4e0505;
+    font-family: "Qatar-heavy";
+    font-size: 30px;
+  }
+
+  .cardprofile h3{
+    color: #4e0505;
+  }
+
+  .cardprofile p{
+    color: #4e0505;
+  }
+
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    body {
+      flex-flow: column nowrap;
+    }
+   
+    body header {
+      align-self: center;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
+
+  .sosmed ul {
+    padding: 5px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+   
+  .sosmed li {
+    list-style-type: none;
+  }
+  
+  .stat{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: #4e0505;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .garis {
+    size: 10px;
+    background-color: black;
+  }
+
+    /*table*/
+    .row {
+      display: flex;
+      padding: 10px;
+    }
+    
+    .column {
+      flex: 50%;
+      padding: 5px;
+    }
+  
+    @media screen and (max-width: 1200px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+  .tabel{
+    text-align: center;
+    color: #4e0505;
+    font-family: "Qatar-heavy";
+    font-size: 30px;
+  }
+
+  .tabel2 {
+    line-height: 50px;
+    font-family: "Qatar-bold";
+  }
+
+  td{
+    font-family: "Qatar-bold";
+    font-style: normal;
+  }
+
+  th{
+    font-family: "Qatar-bold";
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+
+
